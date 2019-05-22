@@ -1,0 +1,5 @@
+# Tasky
+Chrome extension task manager
+
+Based on Max Sandelin's To-Do List app
+https://www.youtube.com/watch?v=2wCpkOk2uCg&t=2149s

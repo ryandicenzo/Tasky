@@ -6,11 +6,10 @@
     "author": "Ryan DiCenzo",
    "browser_action": {
       "default_icon": "tab-icon.png",
-      "default_title": "Have a produtive day!",
-      "default_popup": "index.html"
+      "default_title": "Have a produtive day!"
     },
    "chrome_url_overrides" : {
      "newtab": "index.html"
    },
-    "permissions": ["activeTab"]
+    "permissions": ["activeTab","storage"] 
    }

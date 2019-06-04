@@ -11,23 +11,40 @@
     <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
 </head>
 <body>
-    <p class="clock" id="ctext">f</p>
-    <header>
-        <input type="text" placeholder="Enter a task.." id="item">
-        <button id="add">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><path class="fill" d="M16,8c0,0.5-0.5,1-1,1H9v6c0,0.5-0.5,1-1,1s-1-0.5-1-1V9H1C0.5,9,0,8.5,0,8s0.5-1,1-1h6V1c0-0.5,0.5-1,1-1s1,0.5,1,1v6h6C15.5,7,16,7.5,16,8z"/></g></svg>
-        </button>
-    </header>    
+    <div class="main-box">
+        <div class="time-tasks">
+            <p class="clock" id="ctext"></p>
+            <header>
+                <input type="text" placeholder="Enter a task.." id="item">
+                <button id="add">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+                        <g>
+                            <path class="fill"
+                                d="M16,8c0,0.5-0.5,1-1,1H9v6c0,0.5-0.5,1-1,1s-1-0.5-1-1V9H1C0.5,9,0,8.5,0,8s0.5-1,1-1h6V1c0-0.5,0.5-1,1-1s1,0.5,1,1v6h6C15.5,7,16,7.5,16,8z" />
+                        </g>
+                    </svg>
+                </button>
+            </header>
+            
+            <div class="container">
+                <!-- Uncompleted -->
+                <ul class="todo" id="todo"></ul>
+                <!-- Completed -->
+                <ul class="todo" id="completed"></ul>
+            </div>
+        </div>
 
-    <div class="container">
-        <!-- Uncompleted -->
-        <ul class="todo" id="todo"></ul>
-        <!-- Completed -->
-        <ul class="todo" id="completed"></ul>
-
+        <div class="weather">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/37d87n122d27/berkeley/?unit=us" data-label_1="BERKELEY" data-label_2="WEATHER" data-mode="Current" data-textcolor="#ffffff">Berkeley, CA Weather</a>
+        <!-- <p id="sample-location">latlon</p> -->
+            <script src="resources/js/weather.js"></script>
+        </div>
     </div>
 
-
+    
     <script src="resources/js/main.js"></script>
+
+
 </body>
 </html>

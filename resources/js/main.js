@@ -1,3 +1,7 @@
+// WEATHER
+
+// TODO: ADD LOCALIZATION TO WEATHER
+
 // CLOCK
 
 function setTime() {
@@ -18,7 +22,6 @@ setTime()
 
 // TASKS
 
-// 
 var separator = '•';
 
 // SVG Code
@@ -30,12 +33,15 @@ chrome.storage.sync.get('tasks', function (items) {
   loadTasksFromText(items.tasks)
 });
 
-console.log(tasksText)
 loadTasksFromText(tasksText)
 
 function loadTasksFromText(text) {
 
   var lastTaskEndPos = 0;
+
+  if (text == null) {
+    return;
+  }
 
   for (var i = 0; i < text.length; i++) {
     if (text.charAt(i) == separator) {
